@@ -1,0 +1,22 @@
+{
+  "Acne": [
+    {"name": "Dr. A. Sharma", "hospital": "AIIMS", "city": "New Delhi", "phone": "+91-11-xxxxxxx"},
+    {"name": "Dr. R. Patel", "hospital": "Apollo", "city": "Ahmedabad", "phone": "+91-79-xxxxxxx"}
+  ],
+  "Carcinoma": [
+    {"name": "Dr. V. Iyer", "hospital": "Tata Memorial", "city": "Mumbai", "phone": "+91-22-xxxxxxx"},
+    {"name": "Dr. N. Gupta", "hospital": "AIIMS Cancer Centre", "city": "New Delhi", "phone": "+91-11-xxxxxxx"}
+  ],
+  "Eczema": [
+    {"name": "Dr. S. Khan", "hospital": "Fortis", "city": "Mumbai", "phone": "+91-22-xxxxxxx"}
+  ],
+  "Keratosis": [
+    {"name": "Dr. K. Rao", "hospital": "Manipal", "city": "Bengaluru", "phone": "+91-80-xxxxxxx"}
+  ],
+  "Milia": [
+    {"name": "Dr. P. Singh", "hospital": "Medanta", "city": "Gurugram", "phone": "+91-124-xxxxxxx"}
+  ],
+  "Rosacea": [
+    {"name": "Dr. M. Desai", "hospital": "Apollo", "city": "Chennai", "phone": "+91-44-xxxxxxx"}
+  ]
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <style>
+      body{
+        background: linear-gradient(135deg, #0bc0d4, #a71e9a);
+      }
+      .faq-section {
+        max-width: 800px;
+        margin: 40px auto;
+        font-family: Arial, sans-serif;
+      }
+
+      .faq h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .faq {
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+      }
+
+      .faq-question {
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        padding-right: 20px;
+      }
+
+      .faq-answer {
+        display: none;
+        margin-top: 10px;
+        color: #555;
+      }
+
+      .faq-question::after {
+        content: "+";
+        position: absolute;
+        right: 0;
+        font-size: 18px;
+        transition: 0.3s;
+      }
+
+      .faq.active .faq-question::after {
+        content: "-";
+      }
+
+      .faq.active .faq-answer {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="faq-section">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <div class="faq-question">How do I Check My Skin Disease?</div>
+        <div class="faq-answer">
+          You can check your skin disease by clicking on the Choose file, selecting the file and clicking on button analyse.
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <script>
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          question.parentElement.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

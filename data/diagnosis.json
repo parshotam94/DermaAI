@@ -1,0 +1,101 @@
+{
+  "Acne": {
+    "overview": "Common inflammatory condition with comedones, papules, or pustules.",
+    "precautions": [
+      "Use gentle, non-comedogenic cleanser",
+      "Avoid picking/squeezing lesions",
+      "Keep hair products off the face"
+    ],
+    "care": [
+      "Over-the-counter benzoyl peroxide or salicylic acid",
+      "Moisturize if dryness occurs"
+    ],
+    "seek_help_if": [
+      "Painful nodules/cysts",
+      "Scarring",
+      "No improvement after 8–12 weeks"
+    ]
+  },
+  "Carcinoma": {
+    "overview": "Type of skin cancer, often presenting as non-healing sores, red patches, or growths.",
+    "precautions": [
+      "Protect skin from UV exposure",
+      "Regular self-skin checks",
+      "Avoid tanning beds"
+    ],
+    "care": [
+      "Early medical evaluation is critical",
+      "Follow dermatologist-recommended treatment"
+    ],
+    "seek_help_if": [
+      "Any non-healing lesion",
+      "Bleeding or ulcerated growth",
+      "Rapid changes in skin lesions"
+    ]
+  },
+  "Eczema": {
+    "overview": "Chronic itchy dermatitis with dry, inflamed patches.",
+    "precautions": [
+      "Moisturize twice daily",
+      "Avoid harsh soaps and fragrances",
+      "Short, lukewarm showers"
+    ],
+    "care": [
+      "Use emollients and barrier creams",
+      "Topical steroid under medical guidance"
+    ],
+    "seek_help_if": [
+      "Oozing/crusting suggests infection",
+      "Widespread or severe flares"
+    ]
+  },
+  "Keratosis": {
+    "overview": "Rough, scaly patches of skin caused by excessive keratin buildup (may be actinic or seborrheic).",
+    "precautions": [
+      "Protect skin from sun exposure",
+      "Avoid scratching or picking"
+    ],
+    "care": [
+      "Moisturizers or keratolytic creams (urea, salicylic acid)",
+      "Cryotherapy, curettage, or laser under dermatologist"
+    ],
+    "seek_help_if": [
+      "Lesion grows rapidly",
+      "Bleeding, pain, or color changes",
+      "Cosmetic or functional concern"
+    ]
+  },
+  "Milia": {
+    "overview": "Small, white cysts formed when keratin is trapped beneath the skin surface.",
+    "precautions": [
+      "Do not squeeze or scratch",
+      "Maintain gentle skincare routine"
+    ],
+    "care": [
+      "Often resolve spontaneously",
+      "Exfoliating creams may help",
+      "Dermatologist can extract if persistent"
+    ],
+    "seek_help_if": [
+      "Large number of lesions",
+      "Persistent or spreading"
+    ]
+  },
+  "Rosacea": {
+    "overview": "Chronic skin condition causing redness, flushing, and sometimes pimples on the face.",
+    "precautions": [
+      "Avoid known triggers (spicy food, alcohol, sun, stress)",
+      "Use sunscreen daily",
+      "Gentle skin care routine"
+    ],
+    "care": [
+      "Topical metronidazole, azelaic acid, or ivermectin (doctor prescribed)",
+      "Laser therapy for visible blood vessels"
+    ],
+    "seek_help_if": [
+      "Severe redness or swelling",
+      "Eye irritation",
+      "No improvement with standard care"
+    ]
+  }
+}

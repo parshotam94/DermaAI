@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %} DermaAI {% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='/css/styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- ✅ Header -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{{ url_for('home') }}">DermaAI</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ✅ Main Content Block -->
+    <main>{% block content %} {% endblock %}</main>
+
+    <!-- ✅ Footer -->
+    <footer class="footer-container">
+      <div class="footer-div">
+        <h1>Social Media</h1>
+        <a href="https://fb.com">Facebook</a>
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://whatsapp.com">Whatsapp</a>
+      </div>
+      <div class="footer-div">
+        <h1>Navigation</h1>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="footer-div">
+        <h1>Help Centre</h1>
+        <a href="/faq">Help</a>
+        <a href="/faq">Query</a>
+        <a href="/faq">FAQ</a>
+      </div>
+      <div class="footer-div">
+        <h1>Feedback</h1>
+        <a href="https://youtube.com/manhasofficial">Subscribe</a>
+        <p>Email:</p>
+        <input type="email" placeholder="Send mail" />
+        <p>+91-XXXXXXXXX</p>
+      </div>
+    </footer>
+    <div class="text-center">
+        <small>© {{ year }} SkinCheck • Not medical advice</small>
+      </div>
+  </body>
+</html>

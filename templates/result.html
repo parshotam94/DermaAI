@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="outside">
+  <div class="inside">
+    <div>
+      <img src="{{ image_url }}" alt="Uploaded" class="result-img">
+    </div>
+    <div>
+      <h2>Prediction: <span class="pill">{{ predicted }}</span></h2>
+      <p class="muted">Confidence: {{ confidence }}</p>
+
+      <h3>Top matches</h3>
+      <ul>
+        {% for cls, prob in top3 %}
+          <li>{{ cls }} — {{ (prob*100)|round(1) }}%</li>
+        {% endfor %}
+      </ul>
+
+      <h3>Overview</h3>
+      <p>{{ info.overview }}</p>
+
+      {% if info.precautions %}
+      <h4>Precautions</h4>
+      <ul>{% for p in info.precautions %}<li>{{ p }}</li>{% endfor %}</ul>
+      {% endif %}
+
+      {% if info.care %}
+      <h4>Home care</h4>
+      <ul>{% for c in info.care %}<li>{{ c }}</li>{% endfor %}</ul>
+      {% endif %}
+
+      {% if info.seek_help_if %}
+      <h4>Seek medical help if</h4>
+      <ul>{% for s in info.seek_help_if %}<li>{{ s }}</li>{% endfor %}</ul>
+      {% endif %}
+
+      <div class="alert">
+        {{ disclaimer }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="card">
+  <h3>Dermatologists</h3>
+  {% if doctors and doctors|length > 0 %}
+    <div class="doc-grid">
+      {% for d in doctors %}
+        <div class="doc-card">
+          <strong>{{ d.name }}</strong>
+          <div class="muted">{{ d.hospital }}</div>
+          <div class="muted">{{ d.city }}</div>
+          {% if d.phone %}<div>📞 {{ d.phone }}</div>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No doctors listed yet for this condition.</p>
+  {% endif %}
+  <a class="btn" href="{{ url_for('home') }}">Analyze another image</a>
+</section>
+{% endblock %}
